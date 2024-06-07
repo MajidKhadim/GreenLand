@@ -1,0 +1,95 @@
+/* Form.css */
+
+h2,.card-title{
+  font-family: 'Poppins', sans-serif;
+}
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 1.8rem;
+  justify-content: center;
+  background: #ffffffee;
+  border-radius: 30px;
+}
+
+.form-container{
+  max-width: 1000px;
+  width: 100%;
+}
+
+.card {
+  max-width: 800px; /* Increase the max-width */
+  width: 100%; /* Ensure the card takes up full width within its max-width */
+  margin: 0.2rem; /* Ensure some margin around the card */
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #fff;
+}
+
+.card-title {
+  font-family: 'Poppins', sans-serif;
+  font-size: 24px;
+  color: #111111;
+  margin-bottom: 1rem;
+}
+
+.form-label {
+  font-weight: bold;
+  font-family: 'Poppins', sans-serif;
+  color: #222122;
+}
+
+.form-control {
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 10px;
+  font-family: 'Lato', sans-serif;
+}
+
+.form-control:focus {
+  border-color: #87850f;
+  box-shadow: none;
+}
+
+.btn-custom {
+  background-color: #1e2426;
+  color: #fff;
+  border: none;
+  padding: 10px 15px;
+  font-size: 16px;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.btn-custom:hover {
+  background-color: #87850f;
+}
+
+.form-container, .result-container {
+  flex: 1;
+  padding: 1rem;
+}
+
+.result-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.result-image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .form-container, .result-container {
+    flex: 1 1 100%;
+  }
+}
